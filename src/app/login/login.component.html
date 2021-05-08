@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <h1>Amazon</h1>
+      <div class="main">
+        <form>
+       <h3>Login</h3>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="accn"
+              class="form-control round"
+              #accn
+              aria-describedby="emailHelp"
+              placeholder="Username"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              name="passw"
+              class="form-control round"
+              #pswd
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="center-button">
+            <button type="button " class="signup bg-success round-button" (click)=login(accn.value,pswd.value)>
+              Submit
+            </button>
+          </div>
+          <div class="signup">
+            <a routerLink="register" class="bg-success signup round-button"
+              >Create an Account</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
